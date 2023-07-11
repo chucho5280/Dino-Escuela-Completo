@@ -1,27 +1,7 @@
 # Estudiantes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+![1](https://github.com/chucho5280/Dino-Escuela-Completo/assets/96545330/e95f53e6-3b69-4852-b927-a68107c25c87)
 
-## Development server
+![2](https://github.com/chucho5280/Dino-Escuela-Completo/assets/96545330/8b968fa4-391e-4c57-a7d1-3b7de015a692)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![3](https://github.com/chucho5280/Dino-Escuela-Completo/assets/96545330/366bc479-ed81-421f-81c1-9b46804b44bd)
