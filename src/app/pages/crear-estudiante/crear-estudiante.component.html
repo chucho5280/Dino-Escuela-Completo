@@ -1,0 +1,83 @@
+<h2>Agregar Estudiante</h2>
+
+
+<!--Fondo css-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<!--Fondo css-->
+
+<div class="row justify-content-center">
+    <div class="col-md-4" >
+        <div class="card-body">
+
+            <form [formGroup]="estudianteForm" (ngSubmit)="onSubmit()">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" formControlName="nombre" />
+                    <!-- Mensaje de error de validación -->
+                    <div style="color: red;" *ngIf="enviado && myForm['nombre'].errors?.['required']">
+                        Este campo es obligatorio
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="form-control">
+                    <label for="carrera">Carrera:</label>
+                    <select class="custom-select form-control"
+                        (change)="actualizarCarrera($event.target.value)" formControlName="carrera">
+
+                        <option value="">Selecciona un carrera...</option>
+                        <option *ngFor="let carrera of estudianteCarrera" value="{{ carrera }}">{{carrera}}</option>
+                    </select>
+                    <!-- Mensaje de error de validación -->
+                    <div style="color: red;" *ngIf="enviado && myForm['carrera'].errors?.['required']">
+                        Debes seleccionar un carrera
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="text" class="form-control" formControlName="email" />
+                    <!-- Mensaje de error de validación -->
+                    <div style="color: red;" *ngIf="enviado && myForm['email'].errors?.['required']">
+                        Este campo es obligatorio
+                    </div>
+                    <!-- Mensaje de error de validación -->
+                    <div style="color: red;" *ngIf="enviado && myForm['email'].errors?.['pattern']">
+                        El email no es válido (usuario@dominio.com)
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <label for="usuario">Numero de expediante:</label>
+                    <input type="text" class="form-control" formControlName="usuario" />
+                    <!-- Mensaje de error de validación -->
+                    <div style="color: red;" *ngIf="enviado && myForm['usuario'].errors?.['required']">
+                        Este campo es obligatorio
+                    </div>
+                    <!-- Mensaje de error de validación -->
+                    <div style="color: red;" *ngIf="enviado && myForm['usuario'].errors?.['pattern']">
+                        Solo se admiten números
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <button class="btn btn-success btn-lg btn-block" type="submit" >
+                        Agregar empleado
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
